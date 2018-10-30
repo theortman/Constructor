@@ -3,6 +3,8 @@
 *.prefs
 *.gen
 *.index
+
+.metadata/*
 .metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
 .metadata/.plugins/org.eclipse.ui.intro/introstate
 .metadata/.plugins/org.eclipse.oomph.setup/workspace.setup
@@ -30,3 +32,5 @@
 .metadata/.mylyn/.taskListIndex/segments_1
 .metadata/.log
 .metadata/.lock
+.metadata/.mylyn/tasks.xml.zip
+.metadata/.mylyn/repositories.xml.zip
