@@ -36,7 +36,7 @@ public class appGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        Background.setBackground(new java.awt.Color(255, 255, 255));
+        Background.setBackground(new java.awt.Color(1, 75, 133));
         Background.setPreferredSize(new java.awt.Dimension(450, 600));
 
         LoginPanel.setBackground(new java.awt.Color(255, 255, 255));
