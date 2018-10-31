@@ -1,14 +1,29 @@
+package view;
+
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import javafx.embed.swing.SwingNode;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+@SuppressWarnings("restriction")
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
 
 /**
  *
  * @author Harrison
  */
+
 public class appGUI extends javax.swing.JFrame {
 
     /**
@@ -129,40 +144,30 @@ public class appGUI extends javax.swing.JFrame {
         System.out.println("Start");
     }                                        
 
+public class appGUI extends Application {
+
+	Scene scene1;
+	Scene scene2;
+
+	
+	//initialization code for the javaFX application
+    @Override
+	public void start(Stage appStage) throws Exception {
+    	Parent root = FXMLLoader.load(getClass().getResource("FXMLs/Main_Window.fxml"));
+    	scene1= new Scene(root);
+        appStage.setScene(scene1);
+    	appStage.setTitle("Constructor");
+        appStage.setScene(scene1);
+        appStage.show();	
+	}
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(appGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(appGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(appGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(appGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new appGUI().setVisible(true);
-            }
-        });
+    	launch(args);
     }
+
 
     // Variables declaration - do not modify                     
     private javax.swing.JPanel Background;
@@ -170,5 +175,8 @@ public class appGUI extends javax.swing.JFrame {
     private javax.swing.JLabel LoginText1;
     private javax.swing.JLabel LoginText2;
     private javax.swing.JLabel StartButton;
-    // End of variables declaration                   
+    // End of variables declaration     
+    
+    
+	
 }
