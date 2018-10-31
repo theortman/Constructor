@@ -34,3 +34,4 @@
 .metadata/.lock
 .metadata/.mylyn/tasks.xml.zip
 .metadata/.mylyn/repositories.xml.zip
+/.metadata/
