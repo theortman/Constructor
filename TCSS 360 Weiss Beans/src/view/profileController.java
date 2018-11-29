@@ -31,18 +31,31 @@ public class profileController extends Application {
 
 	
 	
-    @FXML
-    private Label lblCompleteCount;
 
-    @FXML
-    private Label lblName;
 
-    @FXML
-    private Label lblgetProjectCount;
+	    @FXML
+	    private Label total;
 
-    @FXML
-    private Label lblSavings;
 
+	    @FXML
+	    private Label completed;
+
+	    @FXML
+	    private Label savings;
+	    
+	    @FXML
+		private Label lblCompleteCount;
+		 
+		@FXML
+		private Label lblName;
+
+		@FXML
+		private Label lblgetProjectCount;
+
+		@FXML
+		private Label lblSavings;
+		
+		
     public static void main(String args[]) {
     	launch(args);
     }
