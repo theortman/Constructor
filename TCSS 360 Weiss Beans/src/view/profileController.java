@@ -7,7 +7,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
+/*
+ * The whole class
+ * @author Tien Ortman
+ */
 public class profileController extends Application {
 
 	Scene scene1;
@@ -56,7 +59,7 @@ public class profileController extends Application {
 		private Label lblSavings;
 		
 		
-    public static void main(String args[]) {
-    	launch(args);
-    }
+//    public static void main(String args[]) {
+//    	launch(args);
+//    }
 }
