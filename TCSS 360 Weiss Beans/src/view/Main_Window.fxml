@@ -5,15 +5,15 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.appGUI">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.appGUI">
    <children>
-      <Button layoutX="221.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" text="Start" />
-      <Label layoutX="175.0" layoutY="41.0" prefHeight="101.0" prefWidth="271.0" text="Constructor">
+      <Button layoutX="121.0" layoutY="372.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" text="Start" />
+      <Label layoutX="72.0" layoutY="169.0" prefHeight="101.0" prefWidth="271.0" text="Constructor">
          <font>
             <Font size="47.0" />
          </font>
       </Label>
-      <MenuBar>
+      <MenuBar layoutY="7.0">
         <menus>
           <Menu mnemonicParsing="false" text="Menu">
             <items>
